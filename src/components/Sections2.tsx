@@ -20,9 +20,9 @@ export function Founder() {
   const productShowcase = [
     {
       src: IMAGES.productOil,
-      title: "Herbal Hair Oil",
+      title: "Organic Hair Oil",
       caption: "Plate F1 — Cold Pressed Coconut Base",
-      spec: "100ml · Herbal Infusion",
+      spec: "100ml · Organic Infusion",
       desc: "Pure cold-pressed virgin coconut oil infused with whole herbs and amla for deep scalp nourishment.",
     },
     {
@@ -59,7 +59,7 @@ export function Founder() {
             <span className="italic text-beige"> founder of Bassi Organics.</span>
           </>
         }
-        intro="The philosophy behind Bassi Organics — handcrafted herbal hair care rooted in pure coconut oil and whole botanical herbs, formulated with full ingredient transparency."
+        intro="The philosophy behind Bassi Organics — handcrafted organic hair care rooted in pure coconut oil and whole botanical herbs, formulated with full ingredient transparency."
       />
 
       <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
@@ -228,13 +228,6 @@ export function Gallery() {
                 decoding="async"
                 className="plate-img h-full w-full object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-[1.05]"
               />
-              <span className="absolute inset-0 bg-[linear-gradient(to_top,rgba(22,36,27,0.7),transparent_55%)] opacity-80 transition-opacity duration-500 group-hover:opacity-95" />
-              <span className="absolute bottom-3 left-3 right-3 flex items-baseline gap-3">
-                <span className="u-label-sm text-beige">{g.spec}</span>
-                <span className="u-label-sm text-cream/85 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  {g.caption}
-                </span>
-              </span>
               <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center border border-cream/50 text-cream opacity-0 transition-opacity duration-500 group-hover:opacity-100">
                 <svg viewBox="0 0 24 24" className="h-4 w-4" stroke="currentColor" strokeWidth={1.6} fill="none">
                   <path d="M4 9V4h5M20 15v5h-5M15 4h5v5M9 20H4v-5" />
@@ -264,8 +257,7 @@ export function Gallery() {
           >
             <div className="flex items-center justify-between gap-4 border-b border-cream/20 pb-4">
               <div className="flex items-baseline gap-4">
-                <span className="u-label-sm text-amber">{GALLERY[index].spec}</span>
-                <span className="u-label-sm text-cream/80">{GALLERY[index].caption}</span>
+                <span className="u-label-sm text-cream/90">{GALLERY[index].caption}</span>
               </div>
               <div className="flex items-center gap-2" onClick={(e) => e.stopPropagation()}>
                 <button
@@ -339,8 +331,8 @@ export function Reviews() {
       <Reveal>
         <div className="relative mb-8 overflow-hidden border border-forest/30">
           <Photo
-            src={IMAGES.herbalFlatlay}
-            alt="Flat lay of herbal preparations and botanical plants on a warm background"
+            src={IMAGES.organicFlatlay}
+            alt="Flat lay of organic preparations and botanical plants on a warm background"
             className="aspect-[16/7] min-h-[190px] sm:aspect-[16/5]"
           />
           <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(22,36,27,0.86),rgba(22,36,27,0.35)_70%,transparent)]" />
